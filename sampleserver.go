@@ -24,7 +24,6 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func bye(w http.ResponseWriter, r *http.Request) {
-	log.Println("")
 	w.WriteHeader(http.StatusOK)
 	fmt.Fprint(w, "Good bye, this world..\n")
 	return
